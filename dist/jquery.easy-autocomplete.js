@@ -1,14 +1,14 @@
 /*
  * easy-autocomplete
  * jQuery plugin for autocompletion
- * 
+ *
  * @author Łukasz Pawełczak (http://github.com/pawelczak)
  * @version 1.4.0
- * Copyright  License: 
+ * Copyright  License:
  */
 
 /*
- * EasyAutocomplete - Configuration 
+ * EasyAutocomplete - Configuration
  */
 var EasyAutocomplete = (function (scope) {
 
@@ -350,7 +350,7 @@ var EasyAutocomplete = (function (scope) {
 })(EasyAutocomplete || {});
 
 /*
- * EasyAutocomplete - Logger 
+ * EasyAutocomplete - Logger
  */
 var EasyAutocomplete = (function (scope) {
 
@@ -394,9 +394,9 @@ var EasyAutocomplete = (function (scope) {
 })(EasyAutocomplete || {});
 
 /*
- * EasyAutocomplete - ListBuilderService 
+ * EasyAutocomplete - ListBuilderService
  *
- * @author Łukasz Pawełczak 
+ * @author Łukasz Pawełczak
  *
  */
 var EasyAutocomplete = (function (scope) {
@@ -594,7 +594,7 @@ var EasyAutocomplete = (function (scope) {
  * EasyAutocomplete - Data proccess module
  *
  * Process list to display:
- * - sort 
+ * - sort
  * - decrease number to specific number
  * - show only matching list
  *
@@ -677,9 +677,9 @@ var EasyAutocomplete = (function (scope) {
 
 
 /*
- * EasyAutocomplete - Template 
+ * EasyAutocomplete - Template
  *
- * 
+ *
  *
  */
 var EasyAutocomplete = (function (scope) {
@@ -1035,7 +1035,7 @@ var EasyAutocomplete = (function (scope) {
 					/* List show animation */
 						.on('show.eac', function () {
   							if (!$field.is(':focus')) {return}
-						
+
 							switch(config.get('list').showAnimation.type) {
 
 								case 'slide':
@@ -1357,6 +1357,7 @@ var EasyAutocomplete = (function (scope) {
 								settings.dataType = config.get('dataType');
 							}
 
+							settings.contentType = "application/json; charset=utf-8";
 
 							if (settings.url !== undefined && settings.url !== 'list-required') {
 
